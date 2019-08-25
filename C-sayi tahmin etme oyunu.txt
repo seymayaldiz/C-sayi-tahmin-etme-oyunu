@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdlib.h>
+
+
+
+
+
+int main(int argc, char *argv[]) {
+int guess;	
+int number=1+rand()%9;
+int difference;
+int i=1;
+
+for(i;i<3;i++){
+
+printf("iki hakkiniz var,lutfen %d. sayi tahmininizi  girin...\n%d",i,guess);
+
+
+scanf("%d",&guess);
+
+
+if(guess<number || guess>number){
+   difference=abs(guess-number);
+   if(difference>=5){
+   	printf("sayiya cok uzaksiniz..!\n");
+   }
+   if(difference<5 && difference>=3){
+   	printf("sayiya uzaksiniz..\n");
+   }
+   if(difference<=2){
+   	printf("sayiya yakinsiniz..!\n");
+   	
+   }
+   	
+}
+else {
+	printf("tebrikler bildiniz..\n");
+}
+
+}
+
+return 	0;}
